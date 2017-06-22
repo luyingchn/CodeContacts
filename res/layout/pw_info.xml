@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="#80ffffff">
+    <RelativeLayout 
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/bg_pop">
+        <LinearLayout 
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/pw_ll1"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <ImageView 
+            android:layout_height="40dp"
+            android:layout_width="40dp"
+            android:src="@drawable/codeico"/>
+        <TextView 
+            android:layout_marginLeft="15dp"
+            android:layout_height="50dp"
+            android:layout_width="wrap_content"
+            android:text="扫描到联系人信息"
+            android:textSize="24dp"
+            android:textColor="#690"/>
+    </LinearLayout>
+    
+    <!-- 这段以后需要用listView代替 -->
+     <LinearLayout 
+         android:layout_marginTop="20dp"
+         android:layout_alignLeft="@+id/pw_ll1"
+         android:layout_below="@+id/pw_ll1"
+         android:id="@+id/pw_ll2"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content">
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="姓 名："
+                android:textColor="#690"
+                android:textSize="20dp"/>
+             <TextView 
+            android:id="@+id/pw_tv_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=".."
+            android:textSize="23dp"
+            android:singleLine="true"/>
+        </LinearLayout>
+       
+        <LinearLayout 
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+             <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="手 机："
+                android:textColor="#690"
+                android:textSize="20dp"/>
+            <TextView 
+            android:id="@+id/pw_tv_phone1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text=".."
+            android:textSize="23dp"/>
+        </LinearLayout>
+        
+    </LinearLayout>
+    
+      <LinearLayout 
+          android:layout_alignLeft="@+id/pw_ll1"
+          android:layout_below="@+id/pw_ll2"
+          android:layout_marginTop="20dp"
+          android:id="@+id/pw_ll3"
+        android:orientation="horizontal"
+        android:layout_height="60dp"
+        android:layout_width="fill_parent"
+        android:gravity="center">
+        <Button 
+            android:id="@+id/pw_bt_save"
+            android:layout_height="30dp"
+            android:layout_width="120dp"
+            android:text="保 存"
+            android:textColor="#690"
+            android:textSize="18dp"
+            android:background="@drawable/pop_bt_bg"/>
+        <Button 
+            android:layout_marginLeft="10dp"
+            android:id="@+id/pw_bt_cancle"
+            android:layout_height="30dp"
+            android:layout_width="120dp"
+            android:text="取 消"
+            android:textColor="#690"
+            android:textSize="18dp"
+            android:background="@drawable/pop_bt_bg"/>
+    </LinearLayout>
+    </RelativeLayout>
+    
+
+</RelativeLayout>

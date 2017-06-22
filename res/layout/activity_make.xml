@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/makecodebg"
+    tools:context=".MakeActivity" >
+<LinearLayout 
+    android:id="@+id/ll1"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="50dp">
+    <ImageView
+        android:id="@+id/tv_name"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/name" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:hint="联系人姓名"
+        android:maxLength="30"
+        android:singleLine="true" 
+         android:alpha="50" />
+</LinearLayout>
+    
+<LinearLayout 
+    android:id="@+id/ll2"
+    android:orientation="horizontal"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent"
+    android:gravity="center_horizontal"
+    android:layout_below="@+id/ll1"
+    android:layout_marginTop="30dp">
+    <ImageView
+        android:id="@+id/tv_phone1"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/phone" />
+
+    <EditText
+        android:id="@+id/et_phone1"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_bg"
+        android:hint="手机号码"
+        android:inputType="number"
+        android:maxLength="11"
+        android:singleLine="true"
+        android:alpha="50" />
+</LinearLayout>
+    <Button
+        android:id="@+id/bt_generate"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/ll2"
+        android:layout_marginTop="100dp"
+        android:text="生成二维码" 
+        android:background="@drawable/make_code_button"/>
+
+</RelativeLayout>

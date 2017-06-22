@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/bg2"
+    android:gravity="center_horizontal">
+
+    
+   <Button 
+       android:layout_marginTop="130dp"
+       android:id="@+id/bt_getcode"
+       android:layout_width="250dp"
+       android:layout_height="80dp"
+       android:text="扫  码"
+       style="@style/style1"
+       android:background="@drawable/selector_bt1"/>
+   <Button 
+       android:id="@+id/bt_setcode"
+       android:layout_width="250dp"
+       android:layout_height="80dp"
+       android:text="制  码"
+       style="@style/style1"
+       android:background="@drawable/selector_bt2"
+       android:layout_below="@+id/bt_getcode"
+       android:layout_marginTop="5dp"/>
+   <Button 
+       android:id="@+id/bt_about"
+       android:layout_width="250dp"
+       android:layout_height="80dp"
+       android:text="关  于"
+       style="@style/style1"
+       android:background="@drawable/selector_bt3"
+       android:layout_below="@+id/bt_setcode"
+       android:layout_marginTop="5dp"/>
+   <TextView 
+       android:layout_width="250dp"
+       android:layout_height="wrap_content"
+       android:text="扫得人脉   你值得拥有"
+       android:textSize="20dp"
+       android:layout_below="@+id/bt_about"
+       android:layout_marginTop="100dp"
+       android:gravity="center"/>
+
+</RelativeLayout>

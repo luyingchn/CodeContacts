@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="dexedLibs">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/annotations-bf65d065d2bf11dc7706959d18f5bc41.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/zxing-88acaebebfa685eb022f85c622cf8fcb.jar!/" />
+      <root url="jar://$PROJECT_DIR$/bin/dexedLibs/zxing-3de19e58ff722cf6a4a3dc284aaea10a.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
